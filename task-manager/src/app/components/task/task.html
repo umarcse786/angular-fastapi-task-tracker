@@ -1,0 +1,13 @@
+<h3>Tasks</h3>
+
+<div *ngFor="let task of tasks">
+
+  <h4>{{task.title}}</h4>
+  <p>{{task.description}}</p>
+  <p>Status: {{task.status}}</p>
+
+  <button (click)="deleteTask(task.id)">Delete</button>
+
+  <hr>
+
+</div>
